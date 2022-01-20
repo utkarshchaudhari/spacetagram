@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+/* Navigation */
+
+nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 100px;
+}
+
+.nav__header{
+   color: #6030b1;
+}
+
+
+/* Details section */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.details__header{
+    text-align: center;
+    margin: 24px 0;
+    color: #6030b1;
+    font-weight: 700;
+}
+
+.nasa__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__img{
+    width: 100%;
+}
+
+.nasa__card{
+    border: 2px solid #6030b1;
+    border-radius: 10px;
+    width: 30%;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.nasa__card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card__header{
+    margin-top: 16px;
+}
+
+.card__para{
+    margin: 16px 0;
+}
+
+.like__button{
+    font-size: 20px;
+    padding: 8px 16px;
+    border: 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #6030b1;
+    color: #fff;
+}
+
+.like__button:hover{
+    background-color: #ff328f;
+}
+
+/* spinner */
+
+.spinner--add{
+    display: flex;
+    justify-content: center !important;
+    font-size: 60px;
+    color: #6030b1;
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-spinner{
+    animation: rotate 600ms infinite linear;
+}
+
+.data__loading--spinner{
+    display: none !important;
+}
+
+.spinner--add .data__loading--spinner{
+    display: block !important;
+}
+
